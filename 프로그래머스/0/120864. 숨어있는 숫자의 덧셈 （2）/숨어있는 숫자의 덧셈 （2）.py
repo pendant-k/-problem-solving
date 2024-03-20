@@ -13,5 +13,5 @@ def solution(my_string):
     if len(stack) != 0:
         temp = int("".join(stack))
         answer += temp
-        stack.clear()
+        
     return answer
