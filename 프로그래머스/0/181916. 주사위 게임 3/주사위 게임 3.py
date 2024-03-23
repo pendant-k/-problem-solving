@@ -1,3 +1,4 @@
+# Dict, List 활용
 def solution(a, b, c, d):
     dices = [a,b,c,d]
     # 횟수 체크하기 위해 dict 사용
@@ -14,8 +15,9 @@ def solution(a, b, c, d):
     
     if len(dice_dict) == 4:
         return min(dices)
-    
+    # 오름차순 정렬 : 가장 갯수가 많은 값을 인덱싱으로 접근 가능
     converted = sorted(dice_dict.items(), key = lambda item: item[1])
+    
     if len(converted) == 3:
         # 두 개 중복, 나머지 값 두 개
         q = converted[0][0]
@@ -34,6 +36,3 @@ def solution(a, b, c, d):
             q = converted[1][0]
             return (p+q) * (abs(p-q))
         
-        
-    
-    
