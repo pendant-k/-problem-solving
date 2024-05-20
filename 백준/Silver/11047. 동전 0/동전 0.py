@@ -1,10 +1,9 @@
 N, K = map(int, input().split())
 arr = []
-for _ in range(N):
-    arr.append(int(input()))
+coins = [int(input()) for _ in range(N)]
 
 rst = 0
-for money in arr[::-1]:
+for money in coins[::-1]:
     if money <= K:
         rst += K // money
         K %= money
