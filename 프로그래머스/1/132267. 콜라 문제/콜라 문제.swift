@@ -7,7 +7,7 @@ func solution(_ a:Int, _ b:Int, _ n:Int) -> Int {
     var bottles = n
     
     while bottles >= a {
-        let tmp = Int(bottles / a) * b
+        let tmp = bottles / a * b
         cnt += tmp
         bottles = bottles % a + tmp
     } 
