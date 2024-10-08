@@ -1,4 +1,4 @@
 def solution(numbers):
-    tmp = [str(i) for i in numbers]
-    tmp.sort(key=lambda x : x*3,reverse=True)
-    return str(int("".join(tmp)))
+    numbers = [str(x) for x in numbers]
+    numbers.sort(key=lambda x: (x*4)[:4],reverse=True)
+    return  str(int("".join(numbers)))
