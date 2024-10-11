@@ -1,9 +1,6 @@
-# 1,000,000 -> 이중 루프 사용 불가
 def solution(phone_book):
-    # default result value
-    answer = True
     
-    # get value : O(1)
+    answer = True
     tb = set(phone_book)
     
     for item in tb:
