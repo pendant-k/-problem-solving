@@ -1,6 +1,6 @@
 # [level 0] 두 수의 합 - 120802 
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/120802?language=swift) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/120802) 
 
 ### 성능 요약
 
@@ -16,7 +16,7 @@
 
 ### 제출 일자
 
-2024년 07월 17일 12:52:30
+2025년 01월 26일 22:26:21
 
 ### 문제 설명
 
