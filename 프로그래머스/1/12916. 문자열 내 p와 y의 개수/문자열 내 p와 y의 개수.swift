@@ -2,13 +2,19 @@ import Foundation
 
 func solution(_ s:String) -> Bool
 {
-    var ans:Bool = false
+    var countP = 0
+    var countY = 0
     
-    let target = s.lowercased()
-    print(target)
-    if target.filter{ $0 == "p" }.count == target.filter { $0 == "y" }.count {
-        ans = true
+    for c in s.lowercased() {
+        if c == "p" {
+            countP += 1
+        }
+        if c == "y" {
+            countY += 1
+        }
     }
+    
+    
+    return countP == countY ? true : false
 
-    return ans
 }
