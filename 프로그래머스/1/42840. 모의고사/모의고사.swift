@@ -8,6 +8,7 @@ func solution(_ answers:[Int]) -> [Int] {
     var counts = [1 : 0, 2 : 0, 3 : 0]
     
     for i in 0 ..< answers.count {
+        
         if answers[i] == one[i % one.count] {
             counts[1]! += 1
         }
@@ -20,22 +21,5 @@ func solution(_ answers:[Int]) -> [Int] {
             counts[3]! += 1
         }
     }
-    
-    var mx = -1
-    
-    for (k,v) in counts {
-        if v >= mx {
-            mx = v
-        }
-    }
-    
-    var rst = [Int]()
-    
-    for (k,v) in counts {
-        if v == mx {
-            rst.append(k)
-        }
-    }
-    
-    return rst.sorted()
+    return counts.sorted{ $0 < $1 }.filter { $0.value == counts.values.max() }.map { $0.key }
 }
