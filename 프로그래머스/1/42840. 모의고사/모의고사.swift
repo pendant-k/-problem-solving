@@ -21,5 +21,5 @@ func solution(_ answers:[Int]) -> [Int] {
             counts[3]! += 1
         }
     }
-    return counts.sorted{ $0 < $1 }.filter { $0.value == counts.values.max() }.map { $0.key }
+    return counts.sorted{ $0.key < $1.key }.filter { $0.value == counts.values.max() }.map { $0.key }
 }
