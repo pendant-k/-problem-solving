@@ -1,10 +1,10 @@
 # [level 0] rny_string - 181863 
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/181863?language=python3) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/181863) 
 
 ### 성능 요약
 
-메모리: 10.1 MB, 시간: 0.00 ms
+메모리: 16.4 MB, 시간: 0.05 ms
 
 ### 구분
 
@@ -16,7 +16,7 @@
 
 ### 제출 일자
 
-2024년 04월 16일 11:56:56
+2025년 02월 11일 10:23:40
 
 ### 문제 설명
 
@@ -65,7 +65,8 @@
 <p>입출력 예 #1</p>
 
 <ul>
-<li><p>예제 1번의 <code>rny_string</code>의 'm'을 "rn"으로 바꾸는 과정을 표로 나타내면 다음과 같습니다.</p>
+<li>예제 1번의 <code>rny_string</code>의 'm'을 "rn"으로 바꾸는 과정을 표로 나타내면 다음과 같습니다.</li>
+</ul>
 <table class="table">
         <thead><tr>
 <th>rny_string</th>
@@ -97,14 +98,13 @@
 <td>e</td>
 </tr>
 </tbody>
-      </table>
-<p>따라서 "rnasterpiece"를 return 합니다.</p></li>
-</ul>
-
+      </table><div class="highlight"><pre class="codehilite"><code>따라서 "rnasterpiece"를 return 합니다.
+</code></pre></div>
 <p>입출력 예 #2</p>
 
 <ul>
-<li><p>예제 2번의 <code>rny_string</code>의 'm'을 "rn"으로 바꾸는 과정을 표로 나타내면 다음과 같습니다.</p>
+<li>예제 2번의 <code>rny_string</code>의 'm'을 "rn"으로 바꾸는 과정을 표로 나타내면 다음과 같습니다.</li>
+</ul>
 <table class="table">
         <thead><tr>
 <th>rny_string</th>
@@ -136,10 +136,8 @@
 <td>s</td>
 </tr>
 </tbody>
-      </table>
-<p>따라서 "prograrnrners"를 return 합니다.</p></li>
-</ul>
-
+      </table><div class="highlight"><pre class="codehilite"><code>따라서 "prograrnrners"를 return 합니다.
+</code></pre></div>
 <p>입출력 예 #3</p>
 
 <ul>
