@@ -1,7 +1,5 @@
 S = input()
-alp = "abcdefghijklmnopqrstuvwxyz"
-rst = ""
-for a in alp:
-    rst += str(S.count(a)) + " "
+candidats = "abcdefghijklmnopqrstuvwxyz"
 
-print(rst)
+for a in candidats:
+    print(S.count(a), end=" ")
