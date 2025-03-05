@@ -1,10 +1,13 @@
 from itertools import combinations as cm
 
-arr = []
-for _ in range(9):
-    arr.append(int(input()))
+tmp = []
+for _ in range(0, 9):
+    n = int(input())
+    tmp.append(n)
 
-for tmp in cm(arr, 7):
-    if sum(tmp) == 100:
-        print(*sorted(tmp), sep="\n")
+rst = cm(tmp, 7)
+for items in rst:
+    if sum(items) == 100:
+        for item in sorted(items):
+            print(item)
         break
