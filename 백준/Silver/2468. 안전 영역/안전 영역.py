@@ -1,4 +1,6 @@
 # 2468 안전 영역(S1)
+# 아무 지역도 물에 잠기지 않을 수도 있다. -> h == 0인 경우도 고려해야한다.
+
 import sys
 
 sys.setrecursionlimit(10**6)
@@ -10,7 +12,7 @@ adj = []
 mh = 1
 
 # return value
-ret = 0
+ret = 1
 
 dy = [0, 0, 1, -1]
 dx = [1, -1, 0, 0]
@@ -40,7 +42,7 @@ for _ in range(n):
 # print(adj)
 
 # 높이마다 loop 실행 (시나리오)
-for h in range(0, mh+1):
+for h in range(1, mh+1):
     visited = [[False for _ in range(n)] for _ in range(n)]
     # ret 초기화
     cnt = 0
