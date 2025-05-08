@@ -21,7 +21,8 @@ def go(maps):
                 adj[ny][nx] = adj[cy][cx] + 1
                 queue.append((ny,nx))
                 
-    return -1 if adj[m-1][n-1] == 1 else adj[m-1][n-1]
+    return adj[m-1][n-1]
     
 def solution(maps):
-    return go(maps)
+    ret = go(maps)
+    return ret if ret > 1 else -1
