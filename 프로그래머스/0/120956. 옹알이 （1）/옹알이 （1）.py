@@ -2,7 +2,7 @@ def solution(babbling):
     ls = ["aya","ye","woo","ma"]
     ret = 0
     for word in babbling:
-        avail = True
+        pos = True
         tmp = word
         tmp = tmp.replace("aya","1")
         tmp = tmp.replace("ye","1")
@@ -10,8 +10,9 @@ def solution(babbling):
         tmp = tmp.replace("ma","1")
         for c in tmp:
             if c != "1":
-                avail = False
-        if avail:
+                pos = False
+                break
+        if pos:
             ret += 1
             
             
