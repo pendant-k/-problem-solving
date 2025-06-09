@@ -1,12 +1,12 @@
 function solution(num_list) {
-    var odd_num = ""
-    var even_num = ""
-    for(var e of num_list){
-        if(e % 2 === 0){
-            even_num += e.toString();
-        } else {
-            odd_num += e.toString();
-        }
-    }
-    return Number(even_num) + Number(odd_num)
+    let ret = 0;
+    
+    const odd = num_list.filter((num)=> num % 2 !== 0);
+    const oddConverted = odd.map((el)=> String(el)).join("");
+    
+    const even = num_list.filter((num)=> num % 2 === 0);
+    const evenConverted = even.map((el)=> String(el)).join("");
+    
+    
+    return Number(oddConverted) + Number(evenConverted);
 }
