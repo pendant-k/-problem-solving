@@ -1,7 +1,9 @@
 function solution(str1, str2) {
-    let answer = '';
-    for(var i = 0; i < str1.length ; i++){
-        answer += `${str1[i]}${str2[i]}`;
+    var answer = '';
+    for(let i = 0; i < str1.length; i++){
+        answer += str1[i];
+        answer += str2[i];
     }
+    
     return answer;
 }
