@@ -10,11 +10,13 @@ rl.on('line', function (line) {
     input = [line];
 }).on('close',function(){
     str = input[0];
- 	console.log([...str].map((e)=>{
-        if(e.match(/[a-z]/)){
-            return e.toUpperCase();
+    const ret = str.split('').map((c)=> {
+        if(c.toLowerCase() === c){
+            return c.toUpperCase();
         } else {
-            return e.toLowerCase();
+            return c.toLowerCase();
         }
-    }).join(""));   
+    }).join("");
+    
+    console.log(ret);
 });
