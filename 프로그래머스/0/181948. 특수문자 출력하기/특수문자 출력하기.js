@@ -5,5 +5,6 @@ const rl = readline.createInterface({
 });
 
 rl.on('close', function () {
-    console.log("!@#$%^&*(\\'\"<>?:;");
+   const rst = `!@#$%^&*(\\'"<>?:;`
+   console.log(rst);
 });
