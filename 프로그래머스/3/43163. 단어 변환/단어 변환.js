@@ -4,9 +4,6 @@ function solution(begin, target, words) {
     const wordLength = words[0].length;
     // console.log(wordLength);
     
-    // answer variable
-    let answer = 0;
-    
     // target이 배열에 없다면 곧바로 종료 : O(n)
     if(words.filter((el) => el === target).length === 0){
         return 0;
@@ -37,13 +34,7 @@ function solution(begin, target, words) {
                 visited[idx] = true;
                 queue.push([word, distance +1]);
             }
-            
         }
-        
-        
     }
-    
-    
-    
-    return answer;
+    return 0;
 }
