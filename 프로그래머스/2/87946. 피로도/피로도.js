@@ -4,21 +4,16 @@ function solution(k, dungeons) {
     const visited = Array(dungeons.length).fill(false);
     
     // 탐색 함수
-    const go = (hp,cnt,visited) => {
-        
-     	if(hp === 0) {
-            rst = Math.max(rst, cnt);
-            return;
-        } 
+    const go = (hp,cnt) => {
         
         //모든 던전 탐색
         for(let i =0; i < dungeons.length; i++){
             if(!visited[i]){
-                console.log(i);
+                // console.log(i);
                 // 진행 가능한 경우에만 진행
                 if(hp >= dungeons[i][0]){
                 	visited[i] = true;
-                	go(hp-dungeons[i][1], cnt+1, visited)
+                	go(hp-dungeons[i][1], cnt+1)
                 	visited[i] = false;
                 } 
             }
@@ -27,7 +22,7 @@ function solution(k, dungeons) {
         return;
     }
     
-    go(k, 0, visited);
+    go(k, 0);
     
     return rst;
 }
