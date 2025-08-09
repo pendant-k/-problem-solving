@@ -1,16 +1,19 @@
 function solution(numbers, target) {
-    let rst = 0;
-    let arr = [numbers[0], -numbers[0]];
-    
-    // 2개 이상 20개 이하
-    for(let i = 1; i < numbers.length; i++){
-        let tmp = [];
-        for(let num of arr){
-            tmp.push(num + numbers[i]);
-            tmp.push(num - numbers[i]);
+    let ret = 0;
+    const go = (node,cnt) => {
+        if(node >= numbers.length){
+            // console.log(cnt);
+            // console.log(cnt);
+            if(cnt === target) ret++;
+            return;
         }
-        arr = tmp;
+        const current = numbers[node];
+        
+        go(node+1,cnt+current);
+        go(node+1,cnt-current);
     }
     
-    return arr.filter(x => x === target).length;
+    go(0,0);
+    
+    return ret;
 }
