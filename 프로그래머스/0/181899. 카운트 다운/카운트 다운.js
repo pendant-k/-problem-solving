@@ -1,8 +1,11 @@
-function solution(start, end_num) {
+function solution(start_num, end_num) {
     var answer = [];
-    while(start >= end_num){
-        answer.push(start);
-        start--;
+    
+    for(let i=end_num; i <= start_num;i++){
+        answer.push(i);
     }
+    
+    answer.sort((a,b)=> b-a);
+    
     return answer;
 }
